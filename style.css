@@ -1,0 +1,1203 @@
+body{
+    background: url(images/n825vxqc.png);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.menu-btn,.dropdown-btn,.card-btn{
+    background-color: transparent;
+    color: white; 
+    cursor: pointer;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    width: fit-content;
+    height: 30px;
+    font-weight: 500;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-btn{
+    margin-bottom: 15px;
+}
+
+.menu-btn{
+    display: inline-block;
+    padding: 0 13px;
+    margin:0 15px 0; 
+    box-shadow: #000;
+}
+.dropdown-btn{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.card-btn:hover, .menu-btn:hover, .contact-us-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.contact-us-btn {
+    background-color: rgb(4, 4, 87);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 24px;
+    margin: 0 15px 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: normal;
+    line-height: 1.2;
+    transition: background 0.2s, color 0.2s;
+}
+
+.header-container{
+    flex: 1;
+    flex-direction: column;
+    max-height: 1000px;
+}
+
+.nav-links{
+    padding-inline-start: 0px;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 5px 50px;
+}
+
+.right-bar{
+    display: flex;
+    display: row;
+}
+
+.ublogo-home{
+    max-width: 200px;
+    padding-top: 20px;
+}
+
+.sedslogo-corner{
+    max-width: 200px;
+    padding-top: 20px;
+}
+
+.nav-bar .toggle-btn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    ;
+}
+
+.dropdown-menu{
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 10px;
+    display: none;
+}
+
+.dropdown-menu.open{
+    display: block;
+}
+
+/* RESPONSIVE NAVBAR */
+@media(max-width: 1300px){ 
+    .nav-links,
+    .contact-btn-container
+     {
+        display:none;
+    }
+
+    .nav-bar .toggle-btn{
+        display: block;
+    }
+}
+
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    padding-right: 20px;
+}
+
+.ubsedslogo{
+    height: fit-content;
+    max-width: 70%;
+}
+
+
+/* .card-container,.card-container-subteams{
+    background:linear-gradient(rgba(0,0,0,0), #000 20%);
+}
+
+.card-container,.card-container-subteams, .card-container-subteams-page{
+    display: grid;
+    grid-gap: 50px;
+    padding: 60px;
+    padding-top: 300px;
+}
+
+.card-container{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-container-subteams, .card-container-subteams-page{
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    padding: 90px 300px 40px;
+} */
+
+
+.card-container, .card-container-subteams, .card-container-subteammain{
+    background:linear-gradient(rgba(0,0,0,0), #000 20%);
+    display: grid;
+    padding: 60px;
+}
+
+.card-container, .card-container-subteams{
+    grid-gap: 50px;
+    padding-top: 300px;
+}
+
+.card-container-subteammain{
+    grid-gap: 70px;
+    padding-top: 100px;
+}
+
+.card-container{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-container-subteams{
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    padding: 90px 300px 40px;
+}
+
+
+.card-home-subteampage{
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 4rem 0 0;
+    transition: transform 200ms ease, box-shadow 0.3s ease;
+    height: fit-content;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+@media (hover){
+
+    .card-content{
+        transform: translateY(22%);
+        transition: transform 200ms ease;
+    }
+    .card-home-subteampage:hover{
+        transform: scale(1.03);
+        /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+        .card-content{
+            transform: translateY(0%);
+        }
+    }
+}
+
+.card-content{
+    padding: 70px 20px 10px;
+    background: linear-gradient(
+        to bottom, /* Specify the direction of the gradient */
+        rgba(0, 0, 0, 0), /* Fully transparent black */
+        rgba(0, 0, 0, 0.9), /* 10% opaque black */
+        rgba(0, 0, 0, 1) /* Fully opaque black */
+    );
+    height: fit-content;
+}
+
+.card-title, .FAQ-title{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    font-size: 40px;
+    line-height: 1px;
+    padding-top: 50px;
+}
+
+.subteam-card-title{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    font-size: 70px;
+    line-height: 1px;
+    padding-top: 50px;
+}
+
+.card-body{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    opacity: 0.7;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.grid-col-span{
+    grid-row-start: 2;
+    grid-column: span 2;
+}
+
+.grid-col-span3{
+    grid-row-start: 3;
+}
+
+.grid-col-span2{
+    grid-row-start: 2;
+}
+
+.grid-col-span1{
+    grid-row-start: 1;
+}
+
+/* @media(max-width: 850px){
+    .grid-col-span, .last-card{
+        grid-column: span 1;
+    }
+    .card-container{
+        padding: 30px;
+        grid-gap: 30px;
+    }
+    .grid-col-span3, .grid-col-span2, .grid-col-span1{
+        grid-row-start: auto;
+    }
+} */
+
+@media(max-width: 1300px){
+    .grid-col-span, .last-card{
+        grid-column: span 1;
+    }
+    .card-container{
+        padding: 30px;
+        grid-gap: 30px;
+    }
+    .grid-col-span3, .grid-col-span2, .grid-col-span1{
+        grid-row-start: auto;
+    }
+}
+
+.footer-container{
+    display: flex;
+    padding: 70px 20px 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+    
+}
+
+.copyright-text{
+    color: white;
+    font-size: 15px;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.footer-logo-container{
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    align-items: center;
+    margin-left: 115px;
+}
+
+.logo-test{
+    margin: 0 12px 0;
+}
+
+
+/* SUBTEAMS PAGE*/
+
+.subteam-heading{
+    color: white;
+    font-size: clamp(20px, 3vw + 25px, 200px);
+    font-family: "Rajdhani", sans-serif;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    align-items: center;
+}
+
+.subteam-text-card{
+    height: fit-content; 
+    /* padding: 30px 50px 30px 50px; */
+}
+
+.card-body-subteam{
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    opacity: 0.7;
+    font-family: "Rajdhani", sans-serif;
+    padding-bottom: 5px;
+    font-size: 40px;
+    text-align: justify;
+    
+}
+
+.subteam-image-card{
+    position: relative;
+    /* background-color: #000; */
+    border-radius: 25px;
+    overflow: hidden;
+    /* padding: 4rem 0 0; */
+    height: fit-content;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    max-height: 450px;
+}
+
+.subteam-pic{
+    max-height: 800px;
+}
+
+.subteam-big-heading{
+    font-size: 80px;
+    font-family: "Rajdhani", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    align-items: center;
+}
+
+.subteam-image-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-heading{
+    color: white;
+    font-size: clamp(20px, 2vw + 20px, 100px);
+    font-family: "Rajdhani", sans-serif;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    align-items: center;
+}
+
+.sponser-heading{
+    color: white;
+    font-size: clamp(20px, 2vw + 20px, 100px);
+    font-family: "Rajdhani", sans-serif;
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    align-items: center;
+    font-size: 30px;
+}
+.FAQ-questions{
+    /* Old styles commented out - replaced with new FAQ styling below */
+}
+
+.FAQ-questions-container{
+    /* Old styles - replaced with new FAQ styling below */
+}
+
+.FAQ-text{
+    /* Old styles - replaced with new FAQ styling below */
+}
+
+/* New FAQ Page Styles */
+.faq-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.faq-page-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.faq-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.faq-item {
+    background: rgba(20, 20, 40, 0.9);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.faq-question {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.faq-answer {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.faq-link {
+    color: rgb(100, 150, 255);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.faq-link:hover {
+    color: rgb(120, 170, 255);
+    text-decoration: underline;
+}
+
+/* FAQ Responsive Design */
+@media (max-width: 768px) {
+    .faq-page-container {
+        padding: 1rem;
+        min-height: calc(100vh - 180px);
+    }
+    
+    .faq-header {
+        margin-bottom: 2rem;
+        padding: 1rem 0;
+    }
+    
+    .faq-page-title {
+        font-size: 2.5rem;
+    }
+    
+    .faq-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .faq-item {
+        padding: 1.5rem;
+    }
+    
+    .faq-question {
+        font-size: 1.5rem;
+    }
+    
+    .faq-answer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-page-container {
+        min-height: calc(100vh - 160px);
+    }
+    
+    .faq-header {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    .faq-page-title {
+        font-size: 2rem;
+    }
+    
+    .faq-container {
+        gap: 1.5rem;
+    }
+    
+    .faq-item {
+        padding: 1rem;
+    }
+    
+    .faq-question {
+        font-size: 1.3rem;
+    }
+}
+
+.sponser-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.sponsers{
+    max-width: 400px;
+    padding: 30px 90px 0px;
+}
+
+.last-card{
+    grid-row-start: 3;
+    grid-column: span 2;
+    /* margin: 0px 300px; */
+}
+
+/* CONTACT PAGE */
+.IREC-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding: 0px 60px;
+}
+.eboard-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    padding: 0px 60px;
+}
+
+.member-card{
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 4rem 0 0;
+    transition: transform 200ms ease, box-shadow 0.3s ease;
+    height: fit-content;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+.member-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-top: 40px;
+    padding-bottom: 15px;
+    margin-top: 270px;
+    background: linear-gradient(
+        to bottom, /* Specify the direction of the gradient */
+        rgba(0, 0, 0, 0), /* Fully transparent black */
+        rgba(0, 0, 0, 0.9), /* 10% opaque black */
+        rgba(0, 0, 0, 1) /* Fully opaque black */
+    );
+}
+
+.position-title, .member-name{
+    font-family: "Rajdhani", sans-serif;
+    color: aliceblue;
+}
+
+.member-name{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.position-title{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 0px;
+}
+
+/* Contact Form Styles */
+.contact-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.contact-form-card {
+    background: rgba(20, 20, 40, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-title {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 10px 0;
+    letter-spacing: 1px;
+}
+
+.contact-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    color: #cccccc;
+    text-align: center;
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    display: block;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    background: #2a2a2a;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: rgb(100, 150, 255);
+    background: #333333;
+    box-shadow: 0 0 0 3px rgba(100, 150, 255, 0.2);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+    font-family: "Inter", sans-serif;
+}
+
+.form-submit-btn {
+    background: linear-gradient(135deg, rgb(4, 4, 87), rgb(20, 20, 120));
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(4, 4, 87, 0.3);
+}
+
+.form-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(4, 4, 87, 0.4);
+    background: linear-gradient(135deg, rgb(20, 20, 120), rgb(4, 4, 87));
+}
+
+.form-submit-btn:active {
+    transform: translateY(0);
+}
+
+.contact-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #444444;
+}
+
+.contact-info h3 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Inter", sans-serif;
+    color: #cccccc;
+    justify-content: center;
+}
+
+.contact-method i {
+    color: rgb(4, 4, 87);
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-method a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #cccccc;
+}
+
+.contact-method a:hover {
+    color: rgb(20, 20, 120);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-card {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+    
+    .contact-title {
+        font-size: 2.5rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-methods {
+        align-items: center;
+    }
+}
+
+/* Events Page Styles */
+.events-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    height: calc(100vh - 280px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-heading {
+    display: none;
+}
+
+.events-subtitle {
+    display: none;
+}
+
+.calendar-container {
+    background: rgba(20, 20, 40, 0.95);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    max-width: 1300px;
+    height: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.calendar-iframe {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.events-info {
+    display: none;
+}
+
+/* Responsive Design for Events Page */
+@media (max-width: 768px) {
+    .events-container {
+        padding: 0.25rem;
+        height: calc(100vh - 240px);
+        max-width: 100%;
+    }
+    
+    .calendar-container {
+        padding: 0.5rem;
+        height: 95%;
+        max-width: 100%;
+    }
+    
+    .calendar-iframe {
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-container {
+        height: calc(100vh - 200px);
+        padding: 0.1rem;
+    }
+    
+    .calendar-container {
+        padding: 0.25rem;
+        height: 98%;
+    }
+    
+    .calendar-iframe {
+        height: 100%;
+    }
+}
+
+/* Sponsors Page Styles */
+.sponsors-heading {
+    text-align: center;
+    margin: 1rem auto 0.5rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.sponsors-heading h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.sponsor-img {
+    width: 100%;
+    max-width: 200px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .sponsors-heading {
+        margin: 0.5rem auto 0.5rem auto;
+        padding: 0.5rem;
+    }
+    
+    .sponsors-heading h1 {
+        font-size: 2rem;
+    }
+    
+    .sponsor-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        min-height: calc(100vh - 250px);
+    }
+    
+    .sponsor-img {
+        height: 100px;
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors-heading {
+        margin: 0.5rem auto 0.25rem auto;
+        padding: 0.5rem;
+    }
+    
+    .sponsors-heading h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sponsor-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        padding: 0.5rem;
+        min-height: calc(100vh - 220px);
+    }
+    
+    .sponsor-img {
+        height: 80px;
+        max-width: 120px;
+    }
+}
+
+/* Thank You Page Styles */
+.thank-you-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-you-card {
+    background: rgba(20, 20, 40, 0.95);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+.thank-you-icon {
+    font-size: 4rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.thank-you-message {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thank-you-details {
+    margin-bottom: 2.5rem;
+}
+
+.thank-you-details h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.next-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.next-steps li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.next-steps li i {
+    color: rgb(100, 150, 255);
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.thank-you-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, rgb(4, 4, 87), rgb(20, 20, 120));
+    color: white;
+    box-shadow: 0 8px 20px rgba(4, 4, 87, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(4, 4, 87, 0.4);
+    background: linear-gradient(135deg, rgb(20, 20, 120), rgb(4, 4, 87));
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-follow h3 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: rgb(100, 150, 255);
+    background: rgba(100, 150, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Thank You Page Responsive Design */
+@media (max-width: 768px) {
+    .thank-you-container {
+        padding: 1rem;
+    }
+    
+    .thank-you-card {
+        padding: 2rem;
+    }
+    
+    .thank-you-title {
+        font-size: 2.5rem;
+    }
+    
+    .thank-you-message {
+        font-size: 1.1rem;
+    }
+    
+    .thank-you-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .thank-you-card {
+        padding: 1.5rem;
+    }
+    
+    .thank-you-icon {
+        font-size: 3rem;
+    }
+    
+    .thank-you-title {
+        font-size: 2rem;
+    }
+    
+    .next-steps li {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
